@@ -48,3 +48,12 @@ self assert: c count equals: 2.
 CounterTest >> testInitialize [
 self assert: Counter new count equals: 0
 ]
+
+{ #category : #tests }
+CounterTest >> testPrintOn [
+|result|
+result := 'a Counter with value: 5'.
+	self
+		assert: (Counter startingAt: 5) printString
+		equals: result
+]
