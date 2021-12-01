@@ -29,3 +29,9 @@ Counter >> increment [
 
 	count := count + 1.
 ]
+
+{ #category : #initialization }
+Counter >> initialize [
+"init this thang!"
+count := 0.
+]
