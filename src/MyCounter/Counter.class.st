@@ -47,3 +47,8 @@ Counter >> printOn: aStream [
 super printOn: aStream.
 aStream nextPutAll: ' with value: ', count printString.
 ]
+
+{ #category : #initialization }
+Counter >> reset [
+count := 0.
+]

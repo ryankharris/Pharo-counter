@@ -57,3 +57,15 @@ result := 'a Counter with value: 5'.
 		assert: (Counter startingAt: 5) printString
 		equals: result
 ]
+
+{ #category : #tests }
+CounterTest >> testReset [
+
+	| c |
+	c := Counter new.
+	c
+		count: 3.
+	self assert: c count equals: 3.
+	c reset.
+		self assert: c count equals: 0.
+]
